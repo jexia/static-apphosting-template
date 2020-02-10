@@ -1,2 +1,2 @@
 # static-apphosting-template
-Template to host static files without be logic
+Template to host static files without BE logic
