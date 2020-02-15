@@ -1,4 +1,7 @@
+/* Import Google font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:400,700&display=swap');
+
+/* Set global styles such as font size and family */
 html,
 body {
     height: 100%;
@@ -7,6 +10,9 @@ body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+/* As we have created a mobile-first display, we should remove the function for desktop users to scroll
+ * IF their screen is bigger:
+ */
 @media (min-width: 800px) and (min-height: 860px) {
     html,
     body {
@@ -14,10 +20,12 @@ body {
     }
 }
 
+/* Add a margin to the whole body */
 body {
     margin: 1em;
 }
 
+/* Set the styles for each text element */
 h1 {
     margin-bottom: 0;
     font-size: 3em;
@@ -44,6 +52,9 @@ a {
     font-weight: 400;
 }
 
+/* Start the styling for the flex box containers. This allows some cool layout affects. (And is what
+ * fully centers the content)
+ */
 .flex-container {
     height: 100%;
     width: 100%;
@@ -75,12 +86,14 @@ a {
     text-align: center;
 }
 
+/* Apply the styling for the logo to ensure it's not too big */
 .logo {
     margin: .1em;
     height: auto;
     max-height: 10em;
 }
 
+/* Add a cool selection effect to change it from blue to a nice yellow, to match our theme. */
 *::selection {
     background: #fff2a8;
 }
@@ -89,6 +102,7 @@ a {
     background: #fff2a8;
 }
 
+/* Add styling to remove the normal list layout and replace it with a horizontal layout */
 ul {
     margin: 0;
     padding: 0;
@@ -115,6 +129,8 @@ ul li a:hover {
     color: #d89b00;
 }
 
+/* Add styling to ensure that the particles are always at the very most back and cover the whole view */
+
 #particles-js {
     position: fixed;
     padding: 0;
@@ -126,11 +142,7 @@ ul li a:hover {
     z-index: -1;
 }
 
-
-/**
- * Disallow selection for the entire site.
- */
-
+/* For the selection coloring we saw before to work nicely, we've removed the ability to select non-text elements */
 body {
     -webkit-user-select: none;
     /* webkit (safari, chrome) browsers */
@@ -141,12 +153,6 @@ body {
     -ms-user-select: none;
     /* IE10+ */
 }
-
-
-/**
- * White-list all of HTML5's "pure text" elements.
- * @see http://www.w3schools.com/tags/
- */
 
 h1,
 h2,
