@@ -1,15 +1,14 @@
 {
-    "name": "static-apphosting",
-    "version": "0.1.0",
-    "private": false,
-    "scripts": {
-      "build": "",
-      "start": "http-server ./dist -p 80"
-    },
-    "dependencies": {
-      "http-server": "^0.11.1"
-    },
-    "devDependencies": {
-     
-    }
-  }
+  "name": "static-apphosting",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "build": "",
+    "start": "http-server ./dist -p 80",
+    "dev": "http-server ./dist -a localhost -p 8080"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {}
+}
