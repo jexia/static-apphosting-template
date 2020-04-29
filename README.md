@@ -1,3 +1,5 @@
+[![Runme](https://svc.runme.io/static/button.svg)](http://runme.io/run?app_id=868851f4-db12-4241-8112-b5f0bf5482d8)
+
 # Static App Hosting Template
 Template to host static files without backend logic.
 
